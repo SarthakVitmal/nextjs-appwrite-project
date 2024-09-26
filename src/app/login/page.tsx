@@ -62,6 +62,7 @@ function login() {
           required
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
+        <Link href="/forgotpassword">Forgot Password?</Link>
         <button onClick={onlogin} className='bg-white text-black p-2 rounded-lg mt-3'>{buttonDisabled?"No Login":"Login"}</button>
         <Link href="/signup">If you not have an account,Please Signup</Link>
       </div>
